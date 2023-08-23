@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "jwtSecret": "olga mern",
-  "mongoUri": "mongodb+srv://olya451208:OyXBNNtgWvwOe76t@cluster0.dzvhut0.mongodb.net/?retryWrites=true&w=majority"
+  "mongoUri": "mongodb+srv://olya451208:OyXBNNtgWvwOe76t@cluster0.dzvhut0.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http//localhost:5000"
 }

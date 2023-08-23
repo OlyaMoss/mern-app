@@ -5,6 +5,7 @@ import {AuthContext} from "../context/AuthContext";
 const Navbar = () => {
     const history = useNavigate()
     const auth = useContext(AuthContext);
+
     const logoutHandler = event => {
         event.preventDefault();
         auth.logout()
