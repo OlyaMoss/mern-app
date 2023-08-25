@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export const LinksList = ({ links }) => {
+const LinksList = ({ links }) => {
     if (!links.length) {
         return <p className="center">Not links yet</p>
     }
@@ -11,9 +11,9 @@ export const LinksList = ({ links }) => {
             <thead>
             <tr>
                 <th>№</th>
-                <th>Оригинальная</th>
-                <th>Сокращенная</th>
-                <th>Открыть</th>
+                <th>Original</th>
+                <th>Abbreviated</th>
+                <th>Open</th>
             </tr>
             </thead>
 
@@ -25,7 +25,7 @@ export const LinksList = ({ links }) => {
                         <td>{link.from}</td>
                         <td>{link.to}</td>
                         <td>
-                            <Link to={`/detail/${link._id}`}>Открыть</Link>
+                            <Link to={`/details/${link._id}`}>Open</Link>
                         </td>
                     </tr>
                 )
@@ -34,3 +34,4 @@ export const LinksList = ({ links }) => {
         </table>
     )
 }
+export default LinksList;
